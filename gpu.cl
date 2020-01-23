@@ -1,7 +1,5 @@
 /*
  * OCLExplorer bitcoin addresses brute-force tool
- * Copyright (C) 2017 Stanislav V. Tretyakov <svtrostov@yandex.ru>
- * 
  * Based on OpenCL script:
  * Vanitygen, vanity bitcoin address generator
  * Copyright (C) 2011 <samr7@cs.washington.edu>
