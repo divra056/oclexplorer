@@ -1,7 +1,7 @@
 /*
  * OCLExplorer bitcoin addresses brute-force tool
  * Copyright (C) 2017 Stanislav V. Tretyakov <svtrostov@yandex.ru>
- * 
+ *
  */
 
 #if !defined (__OCL_EXPLORER_H__)
@@ -11,16 +11,22 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
+
+#if defined(_MSC_VER)
+#include <windows.h>
+#else
 #include <unistd.h>
-#include <fcntl.h>
 #include <sys/time.h>
+#include <sys/file.h>
+#endif
+
+#include <fcntl.h>
 #include <time.h>
 #include <stdbool.h>
 #include <limits.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <ctype.h>
-#include <sys/file.h>
 #include <errno.h>
 #include <assert.h>
 #include <math.h>
@@ -34,12 +40,11 @@
 #include <openssl/sha.h>
 #include <openssl/ripemd.h>
 
-
 /***********************************************************************
  * Определения и константы
  ***********************************************************************/
 
-/*Работа с битами*/
+ /*Работа с битами*/
 #define BIT_SET(a,b) ((a) |= (1<<(b)))
 #define BIT_CLEAR(a,b) ((a) &= ~(1<<(b)))
 #define BIT_FLIP(a,b) ((a) ^= (1<<(b)))
@@ -72,8 +77,8 @@ static const char hex_asc[] = "0123456789abcdef";
  * Структуры
  ***********************************************************************/
 
-/**/
-typedef struct ocl_t{
+ /**/
+typedef struct ocl_t {
 	cl_platform_id		platform_id;	//Платформа
 	cl_device_id		device_id;		//Устройство
 	cl_context			context;		//Контекст
@@ -84,25 +89,25 @@ typedef struct ocl_t{
 	unsigned int		is_unlim_round;	//Признак, указывающий что должно быть неограниченное количество раундов, т.е. поиск с определенного ключа и до победы
 	unsigned int		round;			//Общее количество элементов матрицы
 	unsigned int		invsize;		//Размер очереди для инверсии mod inverse
-	
+
 	unsigned int		quirks;			//Опции компилятора
 	cl_kernel			kernel[MAX_KERNEL]; //Внешние функции CL программы на устройстве
 	cl_mem				arguments[MAX_ARG];		//Аргументы для функций
 	size_t				argument_size[MAX_ARG];	//Размер аргументов
 
 	const char 		*	pkey_base;		//Начальный приватный ключ
-	
+
 } ocl_s;
 
 
-typedef struct binfile_s{
+typedef struct binfile_s {
 	char * name;
 	char * bin_file;
 }binfile_s;
 
 
 
-typedef struct hashrate_s{
+typedef struct hashrate_s {
 	struct timeval time_start;
 	struct timeval time_now;
 	double runtime;
@@ -111,7 +116,7 @@ typedef struct hashrate_s{
 }hashrate_s;
 
 
-typedef struct{
+typedef struct {
 	uint8_t private_bin[32];
 	uint8_t private_hex[65];
 	uint8_t private_wif[65];
@@ -140,9 +145,9 @@ typedef struct{
 
 
 
-/***********************************************************************
- * Функции - oclexplorer.c
- ***********************************************************************/
+ /***********************************************************************
+  * Функции - oclexplorer.c
+  ***********************************************************************/
 
 int		main(int argc, char **argv);
 void 	loop(ocl_s * ocl);
@@ -211,10 +216,10 @@ void					ocl_get_point_tpa(EC_POINT *ppnt, const unsigned char *buf, int cell);
 /***********************************************************************
  * Функции - utils.c
  ***********************************************************************/
-uint32_t 	hash_crc32(uint32_t crc32_start, const void *buf, size_t n );
+uint32_t 	hash_crc32(uint32_t crc32_start, const void *buf, size_t n);
 uint8_t *	bin2hex(uint8_t * buf, const uint8_t * from, size_t n);
 int			hex2bin(uint8_t * buf, const uint8_t * from, size_t n);
-double time_diff(struct timeval x , struct timeval y);
+double time_diff(struct timeval x, struct timeval y);
 
 void	b58_encode_check(void *buf, size_t len, char *result);
 int		b58_decode_check(const char *input, void *buf, size_t len);

@@ -106,10 +106,10 @@ ocl_print_info(ocl_s *ocl){
 	fprintf(stderr, "Driver: %s\n", ocl_device_getstr(did, CL_DRIVER_VERSION));
 	fprintf(stderr, "Profile: %s\n", ocl_device_getstr(did, CL_DEVICE_PROFILE));
 	fprintf(stderr, "Version: %s\n", ocl_device_getstr(did, CL_DEVICE_VERSION));
-	fprintf(stderr, "Max compute units: %zd\n", ocl_device_getsizet(did, CL_DEVICE_MAX_COMPUTE_UNITS));
-	fprintf(stderr, "Max workgroup size: %zd\n", ocl_device_getsizet(did, CL_DEVICE_MAX_WORK_GROUP_SIZE));
-	fprintf(stderr, "Global memory: %ld\n", ocl_device_getulong(did, CL_DEVICE_GLOBAL_MEM_SIZE));
-	fprintf(stderr, "Max allocation: %ld\n\n", ocl_device_getulong(did, CL_DEVICE_MAX_MEM_ALLOC_SIZE));
+	fprintf(stderr, "Max compute units: %d\n", ocl_device_getsizet(did, CL_DEVICE_MAX_COMPUTE_UNITS));
+	fprintf(stderr, "Max workgroup size: %ld\n", ocl_device_getsizet(did, CL_DEVICE_MAX_WORK_GROUP_SIZE));
+	fprintf(stderr, "Global memory: %llu\n", ocl_device_getulong(did, CL_DEVICE_GLOBAL_MEM_SIZE));
+	fprintf(stderr, "Max allocation: %llu\n\n", ocl_device_getulong(did, CL_DEVICE_MAX_MEM_ALLOC_SIZE));
 }
 
 
@@ -432,7 +432,7 @@ ocl_devices_list(cl_platform_id pid, cl_device_id **list_out){
 	cl_uint nd;
 	cl_int res;
 	cl_device_id *ids;
-	res = clGetDeviceIDs(pid, CL_DEVICE_TYPE_GPU, 0, NULL, &nd);
+	res = clGetDeviceIDs(pid, CL_DEVICE_TYPE_ALL, 0, NULL, &nd);
 	if (res != CL_SUCCESS) {
 		ocl_error(res, "clGetDeviceIDs(0)");
 		*list_out = NULL;
@@ -445,7 +445,7 @@ ocl_devices_list(cl_platform_id pid, cl_device_id **list_out){
 			*list_out = NULL;
 			return -1;
 		}
-		res = clGetDeviceIDs(pid, CL_DEVICE_TYPE_GPU, nd, ids, NULL);
+		res = clGetDeviceIDs(pid, CL_DEVICE_TYPE_ALL, nd, ids, NULL);
 		if (res != CL_SUCCESS) {
 			ocl_error(res, "clGetDeviceIDs(n)");
 			free(ids);
@@ -619,7 +619,7 @@ ocl_get_quirks(cl_device_id did, char * optbuf){
 		 * seems to crash based on whether the gods were smiling
 		 * when Catalyst was last installed/upgraded.
 		 */
-		if (ocl_device_gettype(did) & CL_DEVICE_TYPE_GPU) {
+		if (ocl_device_gettype(did) & CL_DEVICE_TYPE_ALL) {
 			quirks |= VG_OCL_EXPENSIVE_BRANCHES;
 			quirks |= VG_OCL_DEEP_VLIW;
 			dvn = ocl_device_getstr(did, CL_DEVICE_EXTENSIONS);
