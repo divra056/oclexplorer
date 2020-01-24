@@ -73,25 +73,25 @@ After some time, the program will find a calculated hash with one of the hashes 
 
 The search result will be displayed and saved in the file "found.txt"
 
-++++++++++++++++++++++++++++++++++++++++++++++++++
-
-TIME: 2018-01-25 16:03:42
-
-PRIV: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf64a1b5
-
-PUBL: 0446c360263b1794e429e7d672a878b5083c37d6ba177bfb68405eed3db01804a210bdfd925c8e2cd16c054c3919c6f0889376e96edc6b2baf5d06d8f139601268
-
-HASH: 09c4d5193ee73de349fb8237cc83d14ed47de115
-
-ADDR: 1testBq2oGSeE3WVfi1MUbJZbUSWwEktC
-
-SALT: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf400000
-
-OFST: 2400692
-
-GPUH: 09c4d5193ee73de349fb8237cc83d14ed47de115
-
-++++++++++++++++++++++++++++++++++++++++++++++++++
+    ++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+    TIME: 2018-01-25 16:03:42
+    
+    PRIV: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf64a1b5
+    
+    PUBL: 0446c360263b1794e429e7d672a878b5083c37d6ba177bfb68405eed3db01804a210bdfd925c8e2cd16c054c3919c6f0889376e96edc6b2baf5d06d8f139601268
+    
+    HASH: 09c4d5193ee73de349fb8237cc83d14ed47de115
+    
+    ADDR: 1testBq2oGSeE3WVfi1MUbJZbUSWwEktC
+    
+    SALT: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf400000
+    
+    OFST: 2400692
+    
+    GPUH: 09c4d5193ee73de349fb8237cc83d14ed47de115
+    
+    ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 Description of the result:
@@ -135,179 +135,175 @@ Remember that finding the private key of a bitcoin wallet and appropriating the 
 
 The test platform has the following configuration OpenCL devices:
 
-Starting OpenCL device query:
-------------------------------
-
- Number of OpenCL capable platforms available: 2
---------------------------------------------------
-
-         Platform ID: 0
-         ----------------
-
-                 [Platform 0] CL_PLATFORM_NAME: Intel(R) OpenCL
-                 [Platform 0] CL_PLATFORM_VENDOR: Intel(R) Corporation
-                 [Platform 0] CL_PLATFORM_VERSION: OpenCL 2.1
-                 [Platform 0] CL_PLATFORM_PROFILE: FULL_PROFILE
-                 [Platform 0] CL_PLATFORM_EXTENSIONS: cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_depth_images cl_khr_fp64 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_icd cl_khr_image2d_from_buffer cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_spir
-
-                 [Platform 0] Number of devices available: 2
-                 ---------------------------------------------
-
-                         [Platform 0] Device ID: 0
-                         ---------------------------
-
-                                         [Platform 0] [Device 0] CL_DEVICE_NAME: Intel(R) HD Graphics 630
-                                         [Platform 0] [Device 0] CL_DEVICE_VERSION: OpenCL 2.1 NEO
-                                         [Platform 0] [Device 0] CL_DRIVER_VERSION: 26.20.100.7463
-                                         [Platform 0] [Device 0] CL_DEVICE_OPENCL_C_VERSION: OpenCL C 2.0
-                                         [Platform 0] [Device 0] CL_DEVICE_MAX_CLOCK_FREQUENCY: 1100 MHz
-                                         [Platform 0] [Device 0] CL_DEVICE_MAX_COMPUTE_UNITS: 24
-                                         [Platform 0] [Device 0] CL_DEVICE_GLOBAL_MEM_SIZE: 3229 MB
-                                         [Platform 0] [Device 0] CL_DEVICE_MAX_MEM_ALLOC_SIZE: 1614 MB
-                                         [Platform 0] [Device 0] CL_DEVICE_LOCAL_MEM_SIZE: 64 KB
-                                         [Platform 0] [Device 0] CL_DEVICE_MAX_WORK_GROUP_SIZE: 256
-                                         [Platform 0] [Device 0] CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: 3
-                                         [Platform 0] [Device 0] CL_DEVICE_MAX_WORK_ITEM_SIZES: 256 256 256
-                                         [Platform 0] [Device 0] CL_DEVICE_IMAGE_SUPPORT: 1 (Available)
-                                         [Platform 0] [Device 0] CL_DEVICE_IMAGE2D_MAX_WIDTH: 16384
-                                         [Platform 0] [Device 0] CL_DEVICE_IMAGE2D_MAX_HEIGHT: 16384
-                                         [Platform 0] [Device 0] CL_DEVICE_IMAGE3D_MAX_WIDTH: 16384
-                                         [Platform 0] [Device 0] CL_DEVICE_IMAGE3D_MAX_HEIGHT: 16384
-                                         [Platform 0] [Device 0] CL_DEVICE_IMAGE3D_MAX_DEPTH: 2048
-
-
-                         [Platform 0] Device ID: 1
-                         ---------------------------
-
-                                         [Platform 0] [Device 1] CL_DEVICE_NAME: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
-                                         [Platform 0] [Device 1] CL_DEVICE_VERSION: OpenCL 2.1 (Build 0)
-                                         [Platform 0] [Device 1] CL_DRIVER_VERSION: 7.6.0.0814
-                                         [Platform 0] [Device 1] CL_DEVICE_OPENCL_C_VERSION: OpenCL C 2.0
-                                         [Platform 0] [Device 1] CL_DEVICE_MAX_CLOCK_FREQUENCY: 2800 MHz
-                                         [Platform 0] [Device 1] CL_DEVICE_MAX_COMPUTE_UNITS: 8
-                                         [Platform 0] [Device 1] CL_DEVICE_GLOBAL_MEM_SIZE: 8073 MB
-                                         [Platform 0] [Device 1] CL_DEVICE_MAX_MEM_ALLOC_SIZE: 2018 MB
-                                         [Platform 0] [Device 1] CL_DEVICE_LOCAL_MEM_SIZE: 32 KB
-                                         [Platform 0] [Device 1] CL_DEVICE_MAX_WORK_GROUP_SIZE: 8192
-                                         [Platform 0] [Device 1] CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: 3
-                                         [Platform 0] [Device 1] CL_DEVICE_MAX_WORK_ITEM_SIZES: 8192 8192 8192
-                                         [Platform 0] [Device 1] CL_DEVICE_IMAGE_SUPPORT: 1 (Available)
-                                         [Platform 0] [Device 1] CL_DEVICE_IMAGE2D_MAX_WIDTH: 16384
-                                         [Platform 0] [Device 1] CL_DEVICE_IMAGE2D_MAX_HEIGHT: 16384
-                                         [Platform 0] [Device 1] CL_DEVICE_IMAGE3D_MAX_WIDTH: 2048
-                                         [Platform 0] [Device 1] CL_DEVICE_IMAGE3D_MAX_HEIGHT: 2048
-                                         [Platform 0] [Device 1] CL_DEVICE_IMAGE3D_MAX_DEPTH: 2048
-
-
-         Platform ID: 1
-         ----------------
-
-                 [Platform 1] CL_PLATFORM_NAME: NVIDIA CUDA
-                 [Platform 1] CL_PLATFORM_VENDOR: NVIDIA Corporation
-                 [Platform 1] CL_PLATFORM_VERSION: OpenCL 1.2 CUDA 10.1.120
-                 [Platform 1] CL_PLATFORM_PROFILE: FULL_PROFILE
-                 [Platform 1] CL_PLATFORM_EXTENSIONS: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_d3d10_sharing cl_khr_d3d10_sharing cl_nv_d3d11_sharing cl_nv_copy_opts cl_nv_create_buffer
-
-                 [Platform 1] Number of devices available: 1
-                 ---------------------------------------------
-
-                         [Platform 1] Device ID: 0
-                         ---------------------------
-
-                                         [Platform 1] [Device 0] CL_DEVICE_NAME: GeForce GTX 1050
-                                         [Platform 1] [Device 0] CL_DEVICE_VERSION: OpenCL 1.2 CUDA
-                                         [Platform 1] [Device 0] CL_DRIVER_VERSION: 431.86
-                                         [Platform 1] [Device 0] CL_DEVICE_OPENCL_C_VERSION: OpenCL C 1.2
-                                         [Platform 1] [Device 0] CL_DEVICE_MAX_CLOCK_FREQUENCY: 1493 MHz
-                                         [Platform 1] [Device 0] CL_DEVICE_MAX_COMPUTE_UNITS: 5
-                                         [Platform 1] [Device 0] CL_DEVICE_GLOBAL_MEM_SIZE: 2048 MB
-                                         [Platform 1] [Device 0] CL_DEVICE_MAX_MEM_ALLOC_SIZE: 512 MB
-                                         [Platform 1] [Device 0] CL_DEVICE_LOCAL_MEM_SIZE: 48 KB
-                                         [Platform 1] [Device 0] CL_DEVICE_MAX_WORK_GROUP_SIZE: 1024
-                                         [Platform 1] [Device 0] CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: 3
-                                         [Platform 1] [Device 0] CL_DEVICE_MAX_WORK_ITEM_SIZES: 1024 1024 64
-                                         [Platform 1] [Device 0] CL_DEVICE_IMAGE_SUPPORT: 1 (Available)
-                                         [Platform 1] [Device 0] CL_DEVICE_IMAGE2D_MAX_WIDTH: 16384
-                                         [Platform 1] [Device 0] CL_DEVICE_IMAGE2D_MAX_HEIGHT: 32768
-                                         [Platform 1] [Device 0] CL_DEVICE_IMAGE3D_MAX_WIDTH: 16384
-                                         [Platform 1] [Device 0] CL_DEVICE_IMAGE3D_MAX_HEIGHT: 16384
-                                         [Platform 1] [Device 0] CL_DEVICE_IMAGE3D_MAX_DEPTH: 16384
+    Starting OpenCL device query:
+    Number of OpenCL capable platforms available: 2
+             Platform ID: 0
+             ----------------
+    
+                     [Platform 0] CL_PLATFORM_NAME: Intel(R) OpenCL
+                     [Platform 0] CL_PLATFORM_VENDOR: Intel(R) Corporation
+                     [Platform 0] CL_PLATFORM_VERSION: OpenCL 2.1
+                     [Platform 0] CL_PLATFORM_PROFILE: FULL_PROFILE
+                     [Platform 0] CL_PLATFORM_EXTENSIONS: cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_depth_images cl_khr_fp64 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_icd cl_khr_image2d_from_buffer cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_spir
+    
+                     [Platform 0] Number of devices available: 2
+                     ---------------------------------------------
+    
+                             [Platform 0] Device ID: 0
+                             ---------------------------
+    
+                                             [Platform 0] [Device 0] CL_DEVICE_NAME: Intel(R) HD Graphics 630
+                                             [Platform 0] [Device 0] CL_DEVICE_VERSION: OpenCL 2.1 NEO
+                                             [Platform 0] [Device 0] CL_DRIVER_VERSION: 26.20.100.7463
+                                             [Platform 0] [Device 0] CL_DEVICE_OPENCL_C_VERSION: OpenCL C 2.0
+                                             [Platform 0] [Device 0] CL_DEVICE_MAX_CLOCK_FREQUENCY: 1100 MHz
+                                             [Platform 0] [Device 0] CL_DEVICE_MAX_COMPUTE_UNITS: 24
+                                             [Platform 0] [Device 0] CL_DEVICE_GLOBAL_MEM_SIZE: 3229 MB
+                                             [Platform 0] [Device 0] CL_DEVICE_MAX_MEM_ALLOC_SIZE: 1614 MB
+                                             [Platform 0] [Device 0] CL_DEVICE_LOCAL_MEM_SIZE: 64 KB
+                                             [Platform 0] [Device 0] CL_DEVICE_MAX_WORK_GROUP_SIZE: 256
+                                             [Platform 0] [Device 0] CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: 3
+                                             [Platform 0] [Device 0] CL_DEVICE_MAX_WORK_ITEM_SIZES: 256 256 256
+                                             [Platform 0] [Device 0] CL_DEVICE_IMAGE_SUPPORT: 1 (Available)
+                                             [Platform 0] [Device 0] CL_DEVICE_IMAGE2D_MAX_WIDTH: 16384
+                                             [Platform 0] [Device 0] CL_DEVICE_IMAGE2D_MAX_HEIGHT: 16384
+                                             [Platform 0] [Device 0] CL_DEVICE_IMAGE3D_MAX_WIDTH: 16384
+                                             [Platform 0] [Device 0] CL_DEVICE_IMAGE3D_MAX_HEIGHT: 16384
+                                             [Platform 0] [Device 0] CL_DEVICE_IMAGE3D_MAX_DEPTH: 2048
+    
+    
+                             [Platform 0] Device ID: 1
+                             ---------------------------
+    
+                                             [Platform 0] [Device 1] CL_DEVICE_NAME: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+                                             [Platform 0] [Device 1] CL_DEVICE_VERSION: OpenCL 2.1 (Build 0)
+                                             [Platform 0] [Device 1] CL_DRIVER_VERSION: 7.6.0.0814
+                                             [Platform 0] [Device 1] CL_DEVICE_OPENCL_C_VERSION: OpenCL C 2.0
+                                             [Platform 0] [Device 1] CL_DEVICE_MAX_CLOCK_FREQUENCY: 2800 MHz
+                                             [Platform 0] [Device 1] CL_DEVICE_MAX_COMPUTE_UNITS: 8
+                                             [Platform 0] [Device 1] CL_DEVICE_GLOBAL_MEM_SIZE: 8073 MB
+                                             [Platform 0] [Device 1] CL_DEVICE_MAX_MEM_ALLOC_SIZE: 2018 MB
+                                             [Platform 0] [Device 1] CL_DEVICE_LOCAL_MEM_SIZE: 32 KB
+                                             [Platform 0] [Device 1] CL_DEVICE_MAX_WORK_GROUP_SIZE: 8192
+                                             [Platform 0] [Device 1] CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: 3
+                                             [Platform 0] [Device 1] CL_DEVICE_MAX_WORK_ITEM_SIZES: 8192 8192 8192
+                                             [Platform 0] [Device 1] CL_DEVICE_IMAGE_SUPPORT: 1 (Available)
+                                             [Platform 0] [Device 1] CL_DEVICE_IMAGE2D_MAX_WIDTH: 16384
+                                             [Platform 0] [Device 1] CL_DEVICE_IMAGE2D_MAX_HEIGHT: 16384
+                                             [Platform 0] [Device 1] CL_DEVICE_IMAGE3D_MAX_WIDTH: 2048
+                                             [Platform 0] [Device 1] CL_DEVICE_IMAGE3D_MAX_HEIGHT: 2048
+                                             [Platform 0] [Device 1] CL_DEVICE_IMAGE3D_MAX_DEPTH: 2048
+    
+    
+             Platform ID: 1
+             ----------------
+    
+                     [Platform 1] CL_PLATFORM_NAME: NVIDIA CUDA
+                     [Platform 1] CL_PLATFORM_VENDOR: NVIDIA Corporation
+                     [Platform 1] CL_PLATFORM_VERSION: OpenCL 1.2 CUDA 10.1.120
+                     [Platform 1] CL_PLATFORM_PROFILE: FULL_PROFILE
+                     [Platform 1] CL_PLATFORM_EXTENSIONS: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_d3d10_sharing cl_khr_d3d10_sharing cl_nv_d3d11_sharing cl_nv_copy_opts cl_nv_create_buffer
+    
+                     [Platform 1] Number of devices available: 1
+                     ---------------------------------------------
+    
+                             [Platform 1] Device ID: 0
+                             ---------------------------
+    
+                                             [Platform 1] [Device 0] CL_DEVICE_NAME: GeForce GTX 1050
+                                             [Platform 1] [Device 0] CL_DEVICE_VERSION: OpenCL 1.2 CUDA
+                                             [Platform 1] [Device 0] CL_DRIVER_VERSION: 431.86
+                                             [Platform 1] [Device 0] CL_DEVICE_OPENCL_C_VERSION: OpenCL C 1.2
+                                             [Platform 1] [Device 0] CL_DEVICE_MAX_CLOCK_FREQUENCY: 1493 MHz
+                                             [Platform 1] [Device 0] CL_DEVICE_MAX_COMPUTE_UNITS: 5
+                                             [Platform 1] [Device 0] CL_DEVICE_GLOBAL_MEM_SIZE: 2048 MB
+                                             [Platform 1] [Device 0] CL_DEVICE_MAX_MEM_ALLOC_SIZE: 512 MB
+                                             [Platform 1] [Device 0] CL_DEVICE_LOCAL_MEM_SIZE: 48 KB
+                                             [Platform 1] [Device 0] CL_DEVICE_MAX_WORK_GROUP_SIZE: 1024
+                                             [Platform 1] [Device 0] CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: 3
+                                             [Platform 1] [Device 0] CL_DEVICE_MAX_WORK_ITEM_SIZES: 1024 1024 64
+                                             [Platform 1] [Device 0] CL_DEVICE_IMAGE_SUPPORT: 1 (Available)
+                                             [Platform 1] [Device 0] CL_DEVICE_IMAGE2D_MAX_WIDTH: 16384
+                                             [Platform 1] [Device 0] CL_DEVICE_IMAGE2D_MAX_HEIGHT: 32768
+                                             [Platform 1] [Device 0] CL_DEVICE_IMAGE3D_MAX_WIDTH: 16384
+                                             [Platform 1] [Device 0] CL_DEVICE_IMAGE3D_MAX_HEIGHT: 16384
+                                             [Platform 1] [Device 0] CL_DEVICE_IMAGE3D_MAX_DEPTH: 16384
 
 1. Run test on Platform 0 Device ID 0 -  Intel(R) HD Graphics 630 (OpenCL 2.1 NEO):
 
-oclexplorer.exe -b test1.bin -k 6AA3789CFE067047480EED275D4A017B812D19AE6A4B82105E0B7DCEAF000000 -u
+    oclexplorer.exe -b test1.bin -k 6AA3789CFE067047480EED275D4A017B812D19AE6A4B82105E0B7DCEAF000000 -u
 
 The follow output for running on Intel(R) HD Graphics 630:
 
-[test1.bin] loading...   loaded 2 records : 0.004139 sec
-Load program file: ./gpu.cl
-Compiling CL, can take minutes...Grid size: 3072x4096, total 12582912
-Modular inverse: 6144 threads, 2048 ops each
-
-==[SELECTED DEVICE INFO]============================
-Device: Intel(R) HD Graphics 630
-Vendor: Intel(R) Corporation (8086)
-Driver: 26.20.100.7463
-Profile: FULL_PROFILE
-Version: OpenCL 2.1 NEO
-Max compute units: 24
-Max workgroup size: 256
-Global memory: 3386306560
-Max allocation: 1693153280
-
-
-Iteration 1 at [2020-01-23 18:59:26] from: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++
-TIME: 2020-01-23 18:59:31
-PRIV: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf64a1b5
-PUBL: 0446c360263b1794e429e7d672a878b5083c37d6ba177bfb68405eed3db01804a210bdfd925c8e2cd16c054c3919c6f0889376e96edc6b2baf5d06d8f139601268
-HASH: 09c4d5193ee73de349fb8237cc83d14ed47de115
-ADDR: 1testBq2oGSeE3WVfi1MUbJZbUSWwEktC
-SALT: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
-OFST: 6594996
-GPUH: 09c4d5193ee73de349fb8237cc83d14ed47de115
-++++++++++++++++++++++++++++++++++++++++++++++++++
+    [test1.bin] loading...   loaded 2 records : 0.004139 sec
+    Load program file: ./gpu.cl
+    Compiling CL, can take minutes...Grid size: 3072x4096, total 12582912
+    Modular inverse: 6144 threads, 2048 ops each
+    
+    ==[SELECTED DEVICE INFO]============================
+    Device: Intel(R) HD Graphics 630
+    Vendor: Intel(R) Corporation (8086)
+    Driver: 26.20.100.7463
+    Profile: FULL_PROFILE
+    Version: OpenCL 2.1 NEO
+    Max compute units: 24
+    Max workgroup size: 256
+    Global memory: 3386306560
+    Max allocation: 1693153280
+    
+    
+    Iteration 1 at [2020-01-23 18:59:26] from: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
+    
+    
+    ++++++++++++++++++++++++++++++++++++++++++++++++++
+    TIME: 2020-01-23 18:59:31
+    PRIV: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf64a1b5
+    PUBL: 0446c360263b1794e429e7d672a878b5083c37d6ba177bfb68405eed3db01804a210bdfd925c8e2cd16c054c3919c6f0889376e96edc6b2baf5d06d8f139601268
+    HASH: 09c4d5193ee73de349fb8237cc83d14ed47de115
+    ADDR: 1testBq2oGSeE3WVfi1MUbJZbUSWwEktC
+    SALT: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
+    OFST: 6594996
+    GPUH: 09c4d5193ee73de349fb8237cc83d14ed47de115
+    ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 [6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceb0800000], round 3: 2.49s (5.05 Mkey/s) [total 37748736 (3.63 Mkey/s)]
 
 2. Run test on Platform 0 Device ID 1 - Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz (OpenCL 2.1)
 
-oclexplorer.exe -b test1.bin -k 6AA3789CFE067047480EED275D4A017B812D19AE6A4B82105E0B7DCEAF000000 -u -p 0 -d 1
+    oclexplorer.exe -b test1.bin -k 6AA3789CFE067047480EED275D4A017B812D19AE6A4B82105E0B7DCEAF000000 -u -p 0 -d 1
 
 The follow output for running on Intel(R) Core(TM) i7-7700HQ:
 
-[test1.bin] loading...   loaded 2 records : 0.000277 sec
-Load program file: ./gpu.cl
-Compiling CL, can take minutes...Grid size: 4096x4096, total 16777216
-Modular inverse: 65536 threads, 256 ops each
-
-==[SELECTED DEVICE INFO]============================
-Device: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
-Vendor: Intel(R) Corporation (8086)
-Driver: 7.6.0.0814
-Profile: FULL_PROFILE
-Version: OpenCL 2.1 (Build 0)
-Max compute units: 8
-Max workgroup size: 8192
-Global memory: 8465768448
-Max allocation: 2116442112
-
-
-Iteration 1 at [2020-01-23 19:03:47] from: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++
-TIME: 2020-01-23 19:03:53
-PRIV: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf64a1b5
-PUBL: 0446c360263b1794e429e7d672a878b5083c37d6ba177bfb68405eed3db01804a210bdfd925c8e2cd16c054c3919c6f0889376e96edc6b2baf5d06d8f139601268
-HASH: 09c4d5193ee73de349fb8237cc83d14ed47de115
-ADDR: 1testBq2oGSeE3WVfi1MUbJZbUSWwEktC
-SALT: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
-OFST: 6594996
-GPUH: 09c4d5193ee73de349fb8237cc83d14ed47de115
-++++++++++++++++++++++++++++++++++++++++++++++++++
+    [test1.bin] loading...   loaded 2 records : 0.000277 sec
+    Load program file: ./gpu.cl
+    Compiling CL, can take minutes...Grid size: 4096x4096, total 16777216
+    Modular inverse: 65536 threads, 256 ops each
+    
+    ==[SELECTED DEVICE INFO]============================
+    Device: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+    Vendor: Intel(R) Corporation (8086)
+    Driver: 7.6.0.0814
+    Profile: FULL_PROFILE
+    Version: OpenCL 2.1 (Build 0)
+    Max compute units: 8
+    Max workgroup size: 8192
+    Global memory: 8465768448
+    Max allocation: 2116442112
+    
+    
+    Iteration 1 at [2020-01-23 19:03:47] from: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
+    
+    
+    ++++++++++++++++++++++++++++++++++++++++++++++++++
+    TIME: 2020-01-23 19:03:53
+    PRIV: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf64a1b5
+    PUBL: 0446c360263b1794e429e7d672a878b5083c37d6ba177bfb68405eed3db01804a210bdfd925c8e2cd16c054c3919c6f0889376e96edc6b2baf5d06d8f139601268
+    HASH: 09c4d5193ee73de349fb8237cc83d14ed47de115
+    ADDR: 1testBq2oGSeE3WVfi1MUbJZbUSWwEktC
+    SALT: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
+    OFST: 6594996
+    GPUH: 09c4d5193ee73de349fb8237cc83d14ed47de115
+    ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 [6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceb2000000], round 4: 5.41s (3.10 Mkey/s) [total 67108864 (2.91 Mkey/s)]
 
@@ -316,40 +312,40 @@ And now look at third device on my test system.
 
 3. Run test on Platform 1 Device ID 0 - NVIDIA GeForce GTX 1050 (OpenCL 1.2 CUDA)
 
-oclexplorer.exe -b test1.bin -k 6AA3789CFE067047480EED275D4A017B812D19AE6A4B82105E0B7DCEAF000000 -u -p 1 -d 0
+    oclexplorer.exe -b test1.bin -k 6AA3789CFE067047480EED275D4A017B812D19AE6A4B82105E0B7DCEAF000000 -u -p 1 -d 0
 
 The follow output for running on NVIDIA GeForce GTX 1050:
 
-[test1.bin] loading...   loaded 2 records : 0.000212 sec
-Load program file: ./gpu.cl
-Compiling CL, can take minutes...Grid size: 2560x2048, total 5242880
-Modular inverse: 5120 threads, 1024 ops each
-
-==[SELECTED DEVICE INFO]============================
-Device: GeForce GTX 1050
-Vendor: NVIDIA Corporation (10de)
-Driver: 431.86
-Profile: FULL_PROFILE
-Version: OpenCL 1.2 CUDA
-Max compute units: 5
-Max workgroup size: 1024
-Global memory: 2147483648
-Max allocation: 536870912
-
-
-Iteration 1 at [2020-01-23 19:12:02] from: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
-[6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000], round 1: 0.46s (11.51 Mkey/s) [total 5242880 (6.11 Mkey/s)]
-
-++++++++++++++++++++++++++++++++++++++++++++++++++
-TIME: 2020-01-23 19:12:03
-PRIV: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf64a1b5
-PUBL: 0446c360263b1794e429e7d672a878b5083c37d6ba177bfb68405eed3db01804a210bdfd925c8e2cd16c054c3919c6f0889376e96edc6b2baf5d06d8f139601268
-HASH: 09c4d5193ee73de349fb8237cc83d14ed47de115
-ADDR: 1testBq2oGSeE3WVfi1MUbJZbUSWwEktC
-SALT: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf500000
-OFST: 1352116
-GPUH: 09c4d5193ee73de349fb8237cc83d14ed47de115
-++++++++++++++++++++++++++++++++++++++++++++++++++
+    [test1.bin] loading...   loaded 2 records : 0.000212 sec
+    Load program file: ./gpu.cl
+    Compiling CL, can take minutes...Grid size: 2560x2048, total 5242880
+    Modular inverse: 5120 threads, 1024 ops each
+    
+    ==[SELECTED DEVICE INFO]============================
+    Device: GeForce GTX 1050
+    Vendor: NVIDIA Corporation (10de)
+    Driver: 431.86
+    Profile: FULL_PROFILE
+    Version: OpenCL 1.2 CUDA
+    Max compute units: 5
+    Max workgroup size: 1024
+    Global memory: 2147483648
+    Max allocation: 536870912
+    
+    
+    Iteration 1 at [2020-01-23 19:12:02] from: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000
+    [6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf000000], round 1: 0.46s (11.51 Mkey/s) [total 5242880 (6.11 Mkey/s)]
+    
+    ++++++++++++++++++++++++++++++++++++++++++++++++++
+    TIME: 2020-01-23 19:12:03
+    PRIV: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf64a1b5
+    PUBL: 0446c360263b1794e429e7d672a878b5083c37d6ba177bfb68405eed3db01804a210bdfd925c8e2cd16c054c3919c6f0889376e96edc6b2baf5d06d8f139601268
+    HASH: 09c4d5193ee73de349fb8237cc83d14ed47de115
+    ADDR: 1testBq2oGSeE3WVfi1MUbJZbUSWwEktC
+    SALT: 6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceaf500000
+    OFST: 1352116
+    GPUH: 09c4d5193ee73de349fb8237cc83d14ed47de115
+    ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 [6aa3789cfe067047480eed275d4a017b812d19ae6a4b82105e0b7dceb6d00000], round 26: 0.39s (13.43 Mkey/s) [total 136314880 (12.84 Mkey/s)]
 
@@ -359,3 +355,7 @@ I will be glad any donate for beer:
 
 	Bitcoin address: 13BpPaiENfzrUFrpPwGaVsVDwNr6Ccm7nZ
 	Litecoin address: 1tc1qry72uty38jpj30lfuyxtdguf436xlsjuf57qxr
+
+
+
+
