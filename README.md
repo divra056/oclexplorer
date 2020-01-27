@@ -123,7 +123,10 @@ GPUH: RIPEMD-160 bitcoin hash calculated on the GPU must always be HASH
 Performance was tested on OS Windows 10.
 Tested on video cards: Nvidia GTX 1050 (OpenCL 1.2 CUDA), Intel(R) HD Graphics 630 (OpenCL 2.1 NEO), Intel(R) Gen9 HD Graphics NEO (OpenCL 1.2 NEO).
 Tested on CPU: Intel(R) Core(TM) i7-7700HQ (OpenCL 2.1), Intel(R) Pentium(R) Silver J5005 CPU @ 1.50GHz (OpenCL 2.1).
-Work requires installed OpenCL driver (Nvidia and/or Intel CPU or GPU) and OpenSSL libraries (1.0.2 series, latter version incompatible by API) with elliptic curve support enabled.
+## Work requires installed
+OpenCL driver (Nvidia and/or Intel CPU or GPU),
+OpenSSL libraries (1.0.2 series, latter version incompatible by API) with elliptic curve support enabled,
+Microsoft Visual C++ 2015 Redistributable Update 3 (64-bit run-time components of Visual C++ libraries vc_redist.x64.exe)
 
 
 ## Denial of responsibility
